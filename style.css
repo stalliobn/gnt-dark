@@ -5904,7 +5904,10 @@ p.wp-caption-text {
 	position: relative;
 	margin: 0 -20px -20px 0;
 }
-
+.shop {
+	position: relative;
+	margin: 0 -20px -20px 0;
+}
 .product {
 	position: relative;
 	float: left;
@@ -5915,18 +5918,19 @@ p.wp-caption-text {
 .product-image {
 	position: relative;
 	width: 100%;
-	height: 360px;
 	overflow: hidden;
 }
 
 .product-image > a,
-.product-image .slide a,
-.product-image img {
+.product-image .slide a {
 	display: block;
 	width: 100%;
 	height: 100%;
 }
+.product-image img {
+	max-width: 100%;
 
+}
 body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-image > a {
 	-webkit-transition: all .5s ease;
 	-o-transition: all .5s ease;
@@ -5951,7 +5955,7 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-image > a {
 	font-size: 14px;
 }
 
-.product-title { margin-bottom: 7px; }
+
 
 .product-title h3 {
 	margin: 0;
@@ -5968,7 +5972,6 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-image > a {
 	font-size: 18px;
 	font-weight: 600;
 	color: #444;
-	margin-bottom: 4px;
 }
 
 .product-price del {
@@ -6046,7 +6049,84 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-overlay a {
 }
 
 .sale-flash.out-of-stock { background-color: #777; }
+/*product-box*/
 
+.product:hover .product-box-overlay { opacity: 1; }
+.product-box-overlay,
+.product-box-overlay:before {
+	opacity: 0;
+	position: absolute;
+	z-index: 2;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+}
+
+body:not(.device-touch) .product-box-overlay {
+	-webkit-transition: opacity .3s ease;
+	-o-transition: opacity .3s ease;
+	transition: opacity .3s ease;
+}
+
+.product-box-overlay:before {
+	content: '';
+	z-index: auto;
+	background-color: #FFF;
+	opacity: 0.75;
+}
+
+.product-box-overlay .product-box-btn {
+	float: none;
+	position: absolute;
+	z-index: 3;
+	top: 50%;
+	margin-top: -38px;
+	width: 100%;
+}
+.product-box-btn a {
+	width: 140px;
+}
+.shop2 {
+	max-width: 580px;
+	margin: auto;
+}
+
+.product-rating {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	color: #ddd;
+}
+.prod-right {
+	position: absolute;
+	right: 5px;
+	color: #ddd;
+	top: 5px;
+}
+.prod-left {
+	position: absolute;
+	right: 0;
+	border-top: 1px solid #ddd;
+	bottom: 0;
+	border-left: 1px solid #ddd;
+}
+.prod-left span {
+	display: inline-block;
+	vertical-align: bottom;
+	color: #ddd;
+	border-right: 1px solid #ddd;
+	font-size: 16px;
+	line-height: 16px;
+	text-align: center;
+	padding: 3px;
+	width: 20px;
+}
+.prod-left span:last-child {
+	border-right: 0;
+}
+/*product-box*/
 
 /* Shop - 3 Columns
 -----------------------------------------------------------------*/
@@ -9747,6 +9827,8 @@ body:not(.device-touch) .team-overlay {
 	margin-left: 6px;
 	margin-right: 6px;
 }
+
+
 
 
 /* ----------------------------------------------------------------
