@@ -296,7 +296,11 @@ span.middot {
 
 .bgcolor,
 .bgcolor #header-wrap { background-color: #1ABC9C !important; }
-
+.border-list {
+	border: 1px solid #494949;
+	padding: 10px;
+	margin-bottom: 15px;
+}
 .color { color: #1ABC9C !important; }
 
 .border-color { border-color: #1ABC9C !important; }
@@ -5973,7 +5977,11 @@ body:not(.device-touch):not(.device-xs):not(.device-xxs) .product-image > a {
 	font-weight: 600;
 	color: #444;
 }
-
+.prise-box2 {
+	border-bottom: 1px solid #494949;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
 .product-price del {
 	font-weight: 400;
 	font-size: 90%;
@@ -7416,7 +7424,7 @@ body:not(.device-touch) .button.button-full strong {
 
 .feature-box {
 	position: relative;
-	margin-top: 20px;
+	margin-top: 40px;
 	padding: 0 0 0 80px;
 }
 
@@ -9021,7 +9029,10 @@ body:not(.device-touch) .social-icon i {
 	position: relative;
 	margin: 0 0 30px 0;
 }
-
+.btn-tab a {
+	max-width: 290px;
+	width: 100%;
+}
 ul.tab-nav:not(.tab-nav-lg) {
 	margin: 0;
 	border-bottom: 1px solid #DDD;
@@ -12188,7 +12199,23 @@ body:not(.device-touch) .tagcloud a {
 -----------------------------------------------------------------*/
 
 .table .success { color: #3c763d; }
-
+.table span {
+	display: block;
+	text-align: center;
+}
+.table del {
+	color: #888;
+}
+.table ins {
+	color: #1ABC9C;
+	text-decoration: none;
+}
+.table tr td {
+	vertical-align: middle!important;
+}
+.table tr th {
+	vertical-align: middle!important;
+}
 .table .info { color: #31708f; }
 
 .table .warning { color: #8a6d3b; }
