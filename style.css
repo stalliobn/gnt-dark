@@ -2713,6 +2713,27 @@ body.side-panel-open:not(.device-xxs):not(.device-xs):not(.device-sm) .body-over
 }
 
 
+
+
+/**/
+.item-img {
+	width: 280px;
+	box-sizing: border-box;
+	display: inline-block;
+	vertical-align: top;
+	padding: 0 25px;
+	margin-bottom: 20px;
+}
+
+
+
+
+
+/**/
+
+
+
+
 /* Boxed Slider
 -----------------------------------------------------------------*/
 

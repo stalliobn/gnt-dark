@@ -2,7 +2,11 @@
 	Responsive CSS
 -----------------------------------------------------------------*/
 
-
+@media (max-width: 1199px) {
+	.size-sp span {
+		font-size: 10px;
+	}
+}
 @media (max-width: 1199px) {
 
 	canvas {
@@ -24,6 +28,7 @@
 
 
 @media (min-width: 992px) and (max-width: 1199px) {
+
 
 	#wrapper { width: 1000px; }
 
