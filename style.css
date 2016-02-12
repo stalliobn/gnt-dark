@@ -4,6 +4,9 @@
 	bottom: 20px;
 }
 
+.section p {
+	color: #888;
+}
 /*-----------------------------------------------------------------------------------
 
 	Theme Name: Canvas
@@ -20,7 +23,9 @@ dl, dt, dd, ol, ul, li {
 	margin: 0;
 	padding: 0;
 }
-
+b {
+	color: #ccc;
+}
 .clear {
 	clear: both;
 	display: block;
@@ -33,7 +38,7 @@ dl, dt, dd, ol, ul, li {
 
 ::selection {
 	background: #1ABC9C;
-	color: #FFF;
+	color: #ccc;
 	text-shadow: none;
 }
 
@@ -3302,7 +3307,7 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 
 #page-title.page-title-dark .breadcrumb > .active { color: rgba(255,255,255,0.6); }
 
-#page-title.page-title-dark .breadcrumb a { color: rgba(255,255,255,0.8); }
+#page-title.page-title-dark .breadcrumb a { color: #ccc; }
 
 #page-title.page-title-dark .breadcrumb a:hover { color: rgba(255,255,255,0.95); }
 
@@ -3427,7 +3432,11 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	background-color: #FFF;
 }
 
-#content p { line-height: 1.8; }
+#content p {
+	line-height: 1.8em;
+	font-size: 14px;
+	color: #888;
+}
 
 .content-wrap {
 	position: relative;
@@ -6102,7 +6111,7 @@ body:not(.device-touch) .product-box-overlay {
 .product-box-overlay:before {
 	content: '';
 	z-index: auto;
-	background-color: #FFF;
+	background-color: #000;
 	opacity: 0.75;
 }
 
@@ -6782,7 +6791,7 @@ body:not(.device-xs):not(.device-xxs) .countdown.countdown-large.coming-soon .co
 	height: 40px;
 	line-height: 40px;
 	background-color: #1ABC9C;
-	color: #FFF;
+	color: #ccc;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -8996,7 +9005,7 @@ body:not(.device-touch) .social-icon i {
 	line-height: 44px;
 }
 
-.accordion.accordion-bg .acc_content { padding: 10px 0 15px 36px; }
+.accordion.accordion-bg .acc_content { padding: 10px 0 15px 20px; }
 
 
 /* Accordion - Bordered
@@ -9808,7 +9817,7 @@ body:not(.device-touch) .team-overlay {
 .team-overlay:before {
 	content: '';
 	z-index: auto;
-	background-color: #FFF;
+	background-color: #000;
 	opacity: 0.75;
 }
 
@@ -12223,6 +12232,10 @@ body:not(.device-touch) .tagcloud a {
 .table span {
 	display: block;
 	text-align: center;
+	color: #888;
+}
+.table thead {
+	background: #1F1F1F;
 }
 .table del {
 	color: #888;
