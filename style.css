@@ -988,6 +988,10 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 	background-color: #F5F5F5;
 	border-bottom: 1px solid #EEE;
 }
+
+#page-title h2 {
+	color: #fff;
+}
 #page-title .container { position: relative; }
 #page-title h1 {
 	padding: 0;
@@ -1019,7 +1023,7 @@ body.stretched #header.full-header #primary-menu ul li.mega-menu .mega-menu-cont
 }
 body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 #header.transparent-header + #page-title.page-title-parallax .breadcrumb { margin-top: 35px !important; }
-.breadcrumb a { color: #555; }
+.breadcrumb a { color: #fff; }
 .breadcrumb a:hover { color: #1ABC9C; }
 .breadcrumb i { width: auto !important; }
 
@@ -1032,15 +1036,15 @@ body.stretched .container-fullwidth .breadcrumb { right: 60px !important; }
 	border-bottom: none;
 }
 
-#page-title.page-title-dark h1 { color: rgba(255,255,255,0.9) !important; }
+#page-title.page-title-dark h1 { color: #fff !important; }
 
-#page-title.page-title-dark span { color: rgba(255,255,255,0.7); }
+#page-title.page-title-dark span { color: #fff; }
 
 #page-title.page-title-dark .breadcrumb > .active { color: rgba(255,255,255,0.6); }
 
-#page-title.page-title-dark .breadcrumb a { color: #ccc; }
+#page-title.page-title-dark .breadcrumb a { color: #fff; }
 
-#page-title.page-title-dark .breadcrumb a:hover { color: rgba(255,255,255,0.95); }
+#page-title.page-title-dark .breadcrumb a:hover { color: #ccc; }
 
 
 
@@ -1490,7 +1494,7 @@ body:not(.device-touch) .product-box-overlay {
 	height: 40px;
 	line-height: 40px;
 	background-color: #1ABC9C;
-	color: #ccc;
+	color: #fff;
 	font-weight: 600;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -3217,11 +3221,12 @@ body:not(.device-touch) #gotoTop {
 	Bootstrap Specific
 -----------------------------------------------------------------*/
 
-
+.table span a {
+	color: #fff;
+}
 .table span {
 	display: block;
 	text-align: center;
-	color: #888;
 }
 .table > thead > tr.active > th,
 .table thead {
