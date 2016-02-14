@@ -1,11 +1,11 @@
 .tabs_content {
-  display: none; /* по умолчанию прячем все блоки */
+  display: none;
   border: 1px solid #494949;
   border-top: 0;
   padding: 20px;
 }
 .tabs_content.active {
-  display: block; /* по умолчанию показываем нужный блок */
+  display: block;
 }
 .tabs_control {
 	margin: 0;
@@ -3292,8 +3292,3 @@ body:not(.no-transition) #wrapper,
 	-webkit-transform: scale(1.0);
 	}
 }
-
-
-
-
-

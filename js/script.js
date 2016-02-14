@@ -27,13 +27,33 @@ $(function() {
       });
     }
   });
+
+
   $(function() {
+    var ocImages = $("#oc-images");
     $('ul.tabs_control').on('click', 'li:not(.active)', function() {
       $(this)
       .addClass('active').siblings().removeClass('active')
       .closest('div.new_tabs').find('div.tabs_content').removeClass('active').eq($(this).index()).addClass('active');
-    });
 
+      if ($('#asd').hasClass('active')) {
+        ocImages.owlCarousel({
+          margin: 20,
+          nav: true,
+          navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
+          autoplay: false,
+          autoplayHoverPause: true,
+          dots: false,
+          navRewind: false,
+          responsive:{
+            0:{ items:2 },
+            600:{ items:3 },
+            1000:{ items:4 },
+            1200:{ items:5 }
+          }
+        });
+      }
+    });
   });
 
   var swiperSlider = new Swiper('.swiper-parent',{
