@@ -1,3 +1,31 @@
+.tabs_content {
+  display: none; /* по умолчанию прячем все блоки */
+  border: 1px solid #494949;
+  border-top: 0;
+  padding: 20px;
+}
+.tabs_content.active {
+  display: block; /* по умолчанию показываем нужный блок */
+}
+.tabs_control {
+	margin: 0;
+	border-bottom: 1px solid #494949;
+	list-style: none;
+}
+.tabs_control li.active {
+	background: #383838;
+}
+.tabs_control li {
+	display: inline-block;
+	vertical-align: top;
+	border: 1px solid #494949;
+	padding: 0 15px;
+	color: #ccc;
+	height: 40px;
+	cursor: pointer;
+	line-height: 35px;
+}
+
 .team-social-icons {
 	position: absolute;
 	width: 100%;
@@ -2345,81 +2373,6 @@ body:not(.device-touch) .social-icon i {
 }
 
 .accordion.accordion-border .acc_content { padding: 0 15px 15px 36px; }
-
-
-
-/* ----------------------------------------------------------------
-	Tabs
------------------------------------------------------------------*/
-
-
-.tabs {
-	position: relative;
-	margin: 0 0 30px 0;
-}
-ul.tab-nav:not(.tab-nav-lg) {
-	margin: 0;
-	border-bottom: 1px solid #494949;
-	list-style: none;
-}
-
-ul.tab-nav:not(.tab-nav-lg) li {
-	float: left;
-	border: 1px solid #494949;
-	border-bottom: 0;
-	border-left: 0;
-	height: 41px;
-	text-align: center;
-}
-
-ul.tab-nav:not(.tab-nav-lg) li:first-child {
-	margin-left: 15px;
-	border-left: 1px solid #494949;
-}
-
-ul.tab-nav:not(.tab-nav-lg) li a {
-	display: block;
-	padding: 0 15px;
-	color: #ccc;
-	height: 40px;
-	line-height: 40px;
-
-	font-size: 14px;
-	font-weight: bold;
-}
-
-ul.tab-nav:not(.tab-nav-lg) li.ui-tabs-active a {
-	position: relative;
-	top: 1px;
-	background-color: #383838;
-}
-
-
-/* Tabs - Alternate Nav
------------------------------------------------------------------*/
-
-.tabs.tabs-alt ul.tab-nav li { border-color: transparent; }
-
-.tabs.tabs-alt ul.tab-nav li:first-child { border-left: 0; }
-
-.tabs.tabs-alt ul.tab-nav li a { background-color: #FFF; }
-
-.tabs.tabs-alt ul.tab-nav li.ui-tabs-active a {
-	border: 1px solid #DDD;
-	border-bottom: 0;
-}
-
-
-/* Tabs - Bordered
------------------------------------------------------------------*/
-
-.tabs-bordered ul.tab-nav li:first-child { margin-left: 0; }
-
-.tabs-bordered .tab-container {
-	border: 1px solid #494949;
-	border-top: 0;
-	padding: 20px;
-}
 
 /* ----------------------------------------------------------------
 	Team

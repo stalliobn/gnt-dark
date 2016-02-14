@@ -27,7 +27,14 @@ $(function() {
       });
     }
   });
+  $(function() {
+    $('ul.tabs_control').on('click', 'li:not(.active)', function() {
+      $(this)
+      .addClass('active').siblings().removeClass('active')
+      .closest('div.new_tabs').find('div.tabs_content').removeClass('active').eq($(this).index()).addClass('active');
+    });
 
+  });
 
   var swiperSlider = new Swiper('.swiper-parent',{
     paginationClickable: false,
