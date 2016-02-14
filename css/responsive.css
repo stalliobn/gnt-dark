@@ -704,7 +704,7 @@
 		float: none;
 		margin: 0 !important;
 		text-align: left !important;
-		border-top: 1px solid #EEE;
+		border-top: 1px solid rgba(255,255,255,0.1) !important;
 	}
 
 	#primary-menu ul li:first-child { border-top: 0; }
@@ -763,7 +763,7 @@
 
 	#primary-menu > ul > li.sub-menu > a,
 	#primary-menu > .container > ul > li.sub-menu > a {
-		background-image: url("../images/icons/submenu.png");
+		background-image: url("../images/icons/submenu-dark.png");
 		background-position: right center;
 		background-repeat: no-repeat;
 	}
@@ -776,7 +776,6 @@
 		background-color: transparent !important;
 		box-shadow: none;
 		border: 0;
-		border-top: 1px solid #EEE;
 		z-index: 1;
 		top: 0 !important;
 		padding-left: 15px;
@@ -800,7 +799,7 @@
 	#primary-menu ul ul li {
 		float: none;
 		margin: 0;
-		border-top: 1px solid #EEE;
+		/*border-top: 1px solid #EEE;*/
 	}
 
 	#primary-menu ul ul a {
@@ -855,7 +854,7 @@
 		left: 0;
 	}
 
-	#primary-menu ul li .mega-menu-content ul ul { border-top: 1px solid #EEE; }
+/*	#primary-menu ul li .mega-menu-content ul ul { border-top: 1px solid #EEE; }*/
 
 	#primary-menu ul li .mega-menu-content.col-2 > ul,
 	#primary-menu ul li .mega-menu-content.col-3 > ul,
@@ -864,7 +863,6 @@
 		width: auto;
 		margin: 0;
 		border-left: 0;
-		border-top: 1px solid #EEE;
 	}
 
 	#primary-menu ul li .mega-menu-content > ul:first-child { border: 0; }
@@ -907,7 +905,7 @@
 
 	#primary-menu ul ul i { line-height: inherit; }
 
-	#primary-menu ul li .mega-menu-content.style-2 li { border-top: 1px solid #EEE; }
+/*	#primary-menu ul li .mega-menu-content.style-2 li { border-top: 1px solid #EEE; }*/
 
 	#primary-menu ul li .mega-menu-content.style-2 li:first-child { border-top: 0; }
 
@@ -1064,7 +1062,7 @@
 		left: 0;
 		width: 100%;
 		background-color: #FFF;
-		border-bottom: 1px solid #EEE;
+		/*border-bottom: 1px solid #EEE;*/
 		-webkit-backface-visibility: hidden;
 	}
 
@@ -1488,6 +1486,7 @@
 	.nivo-caption,
 	.flex-caption,
 	.slider-caption p,
+	.slider-caption span,
 	.slider-caption .button,
 	.camera_caption,
 	.ei-title,

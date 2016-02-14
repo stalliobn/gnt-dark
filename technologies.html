@@ -10,7 +10,7 @@
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,400italic,600,700|Raleway:300,400,500,600,700|Crete+Round:400italic" rel="stylesheet" type="text/css" />
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" />
 	<link rel="stylesheet" href="style.css" type="text/css" />
-	<link rel="stylesheet" href="css/dark.css" type="text/css" />
+
 	<link rel="stylesheet" href="css/font-icons.css" type="text/css" />
 	<link rel="stylesheet" href="css/animate.css" type="text/css" />
 
@@ -31,13 +31,13 @@
 
 </head>
 
-<body class="stretched dark">
+<body class="stretched">
 
 	<div id="wrapper" class="clearfix">
 
 		<!-- Top Bar
 		============================================= -->
-	<div id="top-bar" class="hidden-xs dark">
+	<div id="top-bar" class="hidden-xs">
     <div class="container">
       <div class="col_half fright col_last nobottommargin">
         <div id="top-social">
@@ -65,7 +65,7 @@
 
     <!-- Header
     ============================================= -->
-  <header id="header" class=" dark" data-sticky-class="not-transparent-header">
+  <header id="header" data-sticky-class="not-transparent-header">
     <div id="header-wrap">
       <div class="container clearfix">
         <div id="primary-menu-trigger"><i class="icon-reorder"></i></div>
@@ -73,7 +73,7 @@
           ============================================= -->
         <div id="logo">
           <a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png">
-            <img src="images/logo.png" alt="Canvas Logo">
+            <img src="images/logo-dark.png" alt="Canvas Logo">
           </a>
           <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png">
             <img src="images/logo@2x.png" alt="Canvas Logo">
@@ -82,7 +82,7 @@
 
           <!-- Primary Navigation
           ============================================= -->
-        <nav id="primary-menu" class="dark">
+        <nav id="primary-menu">
           <ul>
             <li class="current"><a href="index.html"><div>Главная</div></a></li>
             <li><a href="#"><div>Продукция</div></a>
@@ -969,7 +969,7 @@
 
 		<!-- Footer
 		============================================= -->
-<footer id="footer" class="dark">
+<footer id="footer">
 
   <div class="container">
         <!-- Footer Widgets
@@ -1048,53 +1048,7 @@
 	<!-- Go To Top
 	============================================= -->
 	<div id="gotoTop" class="icon-angle-up"></div>
-
-	<!-- Footer Scripts
-	============================================= -->
-  <script type="text/javascript">
-    $("#quick-contact-form").validate({
-      submitHandler: function(form) {
-        $(form).animate({ opacity: 0.4 });
-        $(form).find('.form-process').fadeIn();
-        $(form).ajaxSubmit({
-          target: '#quick-contact-form-result',
-          success: function() {
-            $(form).animate({ opacity: 1 });
-            $(form).find('.form-process').fadeOut();
-            $(form).find('.form-control').val('');
-            $('#quick-contact-form-result').attr('data-notify-msg', $('#quick-contact-form-result').html()).html('');
-            SEMICOLON.widget.notifications($('#quick-contact-form-result'));
-          }
-        });
-      }
-    });
-  </script>
-
-  <script type="text/javascript">
-
-    jQuery(document).ready(function($) {
-
-      var ocImages = $("#oc-images");
-
-      ocImages.owlCarousel({
-        margin: 20,
-        nav: true,
-        navText: ['<i class="icon-angle-left"></i>','<i class="icon-angle-right"></i>'],
-        autoplay: false,
-        autoplayHoverPause: true,
-        dots: false,
-        navRewind: false,
-        responsive:{
-          0:{ items:2 },
-          600:{ items:3 },
-          1000:{ items:4 },
-          1200:{ items:5 }
-        }
-      });
-
-    });
-
-  </script>
 	<script type="text/javascript" src="js/functions.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>
